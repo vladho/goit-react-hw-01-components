@@ -1,10 +1,11 @@
 import React from 'react';
 import SingleProfile from './SingleProfile/SingleProfile';
-import user from '.././user.json';
+import user from '../../utils/user.json';
+import styles from './Profile.module.css';
 
 const Profile = () => {
   return (
-    <div className="profile">
+    <div className={styles.container}>
       <SingleProfile key={user.name} {...user} />
     </div>
   );

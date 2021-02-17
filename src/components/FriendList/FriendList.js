@@ -1,5 +1,5 @@
 import React from 'react';
-import friends from '../friends.json';
+import friends from '../../utils/friends.json';
 import SingleFriend from './SingleFriend/SingleFriend';
 
 const FriendList = () => {

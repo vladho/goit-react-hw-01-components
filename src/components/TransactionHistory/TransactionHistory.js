@@ -1,5 +1,5 @@
 import React from 'react';
-import transactions from '../transactions.json';
+import transactions from '../../utils/transactions.json';
 import SingleTransaction from './SingleTransaction/SingleTransaction';
 
 const TransactionHistory = () => {

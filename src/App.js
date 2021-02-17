@@ -1,9 +1,9 @@
 import './App.css';
-import Profile from './Profile/Profile';
-import Statistics from './Statistics/Statistics';
-import statisticalData from './statistical-data.json';
-import FriendList from './FriendList/FriendList';
-import TransactionHistory from './TransactionHistory/TransactionHistory';
+import Profile from './components/Profile/Profile';
+import Statistics from './components/Statistics/Statistics';
+import statisticalData from './utils/statistical-data.json';
+import FriendList from './components/FriendList/FriendList';
+import TransactionHistory from './components/TransactionHistory/TransactionHistory';
 
 function App() {
   return (
