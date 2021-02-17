@@ -2,17 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const ProfileList = props => {
-  const {
-    name,
-    tag,
-    location,
-    avatar,
-    stats,
-    followers = stats.followers,
-    views = stats.views,
-    likes = stats.likes,
-  } = props;
-
+  const { name, tag, location, avatar, stats } = props;
+  const { followers, views, likes } = stats;
+  console.log(stats);
   return (
     <>
       <div className="description">
