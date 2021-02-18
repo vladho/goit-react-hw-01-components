@@ -2,12 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 // import stastical from '../statistical-data.json';
 import SingleStatic from './SingleStatic/SingleStatic';
+import { container, title, list } from './Statistics.module.css';
 
 const Statistics = ({ title, stats }) => {
+  // console.log(typeof title);
   return (
-    <section className="statistics">
-      {title && <h2 className="title">Upload stats</h2>}
-      <ul className="stat-list">
+    <section className={container}>
+      {title && <h2 className={title}>Upload stats</h2>}
+      <ul className={list}>
         {stats.map(el => (
           <SingleStatic key={el.id} {...el} />
         ))}
@@ -18,4 +20,7 @@ const Statistics = ({ title, stats }) => {
 
 export default Statistics;
 
-SingleStatic.propTypes = {};
+SingleStatic.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.object,
+};

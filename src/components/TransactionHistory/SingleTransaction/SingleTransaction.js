@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const SingleTransaction = props => {
   const { type, amount, currency } = props;
-  console.log(props);
+  // console.log(props);
   return (
     <>
       <tr>
@@ -15,6 +15,10 @@ const SingleTransaction = props => {
   );
 };
 
-SingleTransaction.propTypes = {};
+SingleTransaction.propTypes = {
+  type: PropTypes.string.isRequired,
+  amount: PropTypes.string.isRequired,
+  currency: PropTypes.string.isRequired,
+};
 
 export default SingleTransaction;

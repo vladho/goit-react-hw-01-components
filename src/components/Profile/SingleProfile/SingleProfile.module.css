@@ -21,15 +21,15 @@
   color: white;
 }
 
-.name {
+.styleName {
   composes: info;
   font-weight: 700;
   font-size: larger;
 }
-.tag {
+.styleTag {
   composes: info;
 }
-.location {
+.styleLocation {
   composes: info;
   font-weight: 300;
   padding-bottom: 10px;
